@@ -7,7 +7,6 @@ import Hero from '../components/Hero';
 import RegistrationGuide from '../components/RegistrationGuide';
 import EarningsTips from '../components/EarningsTips';
 import IncomeBreakdown from '../components/IncomeBreakdown';
-import Support from '../components/Support';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 
@@ -71,7 +70,6 @@ const Index = () => {
           <RegistrationGuide />
           <EarningsTips />
           <IncomeBreakdown />
-          <Support />
           <Contact />
         </main>
         <Footer />

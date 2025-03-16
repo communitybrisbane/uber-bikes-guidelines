@@ -79,7 +79,7 @@ const ReferralCode = () => {
                   <ul className="space-y-3">
                     <li className="flex items-start">
                       <CheckCircle size={20} className="text-uber-green mr-2 mt-1 flex-shrink-0" />
-                      <span>30日以内に100配達を達成</span>
+                      <span>30日以内に40配達を達成</span>
                     </li>
                     <li className="flex items-start">
                       <CheckCircle size={20} className="text-uber-green mr-2 mt-1 flex-shrink-0" />

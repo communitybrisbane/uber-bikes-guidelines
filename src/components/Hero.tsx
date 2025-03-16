@@ -1,6 +1,5 @@
 
 import { ChevronDown } from 'lucide-react';
-import { Link } from 'react-router-dom';
 
 const Hero = () => {
   const scrollToGuide = () => {
@@ -28,8 +27,8 @@ const Hero = () => {
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="animate-fade-up">
           <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-            オーストラリアでの生活を支える、<br className="hidden sm:inline" />
-            <span className="text-uber-green">効率的な稼ぎ方</span>
+            オーストラリアでの生活の幅を広げる<br className="hidden sm:inline" />
+            <span className="text-uber-green">uber 配達員</span>
           </h1>
           
           <p className="text-white text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
@@ -40,12 +39,14 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10">
-            <Link 
-              to="/registration" 
+            <a 
+              href="https://www.uber.com/signup/drive/deliver/?invite_code=1248nns95uhm"
+              target="_blank"
+              rel="noopener noreferrer" 
               className="uber-button text-lg px-8 py-4 shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all"
             >
               今すぐ登録する
-            </Link>
+            </a>
             
             <button 
               onClick={scrollToGuide}

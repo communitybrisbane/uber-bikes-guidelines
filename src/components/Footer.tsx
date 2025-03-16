@@ -13,7 +13,7 @@ const Footer = () => {
   return (
     <footer className="bg-uber-black text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Logo and About */}
           <div className="col-span-1">
             <Link to="/" className="flex items-center space-x-2 text-white font-bold text-xl mb-4">
@@ -121,32 +121,6 @@ const Footer = () => {
                 </a>
               </li>
             </ul>
-          </div>
-
-          {/* Newsletter */}
-          <div className="col-span-1">
-            <h3 className="text-lg font-bold mb-4">最新情報を受け取る</h3>
-            <p className="text-gray-400 mb-4">
-              メールマガジンに登録して、最新の情報やお得な情報を受け取りましょう。
-            </p>
-            <form className="mb-4">
-              <div className="flex">
-                <input 
-                  type="email" 
-                  placeholder="メールアドレス" 
-                  className="flex-grow px-4 py-2 bg-white/10 border border-white/20 rounded-l-md text-white placeholder:text-white/50 focus:outline-none focus:ring-1 focus:ring-uber-green"
-                />
-                <button 
-                  type="submit" 
-                  className="bg-uber-green text-white font-medium px-4 py-2 rounded-r-md hover:bg-opacity-90 transition-colors"
-                >
-                  登録
-                </button>
-              </div>
-            </form>
-            <p className="text-gray-500 text-sm">
-              ※ プライバシーポリシーに同意したうえでご登録ください。
-            </p>
           </div>
         </div>
 

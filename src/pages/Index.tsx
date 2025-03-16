@@ -1,13 +1,35 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import { Helmet } from 'react-helmet';
+import Navbar from '../components/Navbar';
+import Hero from '../components/Hero';
+import RegistrationGuide from '../components/RegistrationGuide';
+import EarningsTips from '../components/EarningsTips';
+import IncomeBreakdown from '../components/IncomeBreakdown';
+import Support from '../components/Support';
+import Contact from '../components/Contact';
+import Footer from '../components/Footer';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
+    <>
+      <Helmet>
+        <title>Uber Eats配達員登録ガイド | community_brisbane</title>
+        <meta name="description" content="オーストラリア・ブリスベンでのUber Eats配達員登録方法と効率的な稼ぎ方のガイド。ワーキングホリデー向けの情報が満載。" />
+      </Helmet>
+
+      <div className="min-h-screen bg-white">
+        <Navbar />
+        <main>
+          <Hero />
+          <RegistrationGuide />
+          <EarningsTips />
+          <IncomeBreakdown />
+          <Support />
+          <Contact />
+        </main>
+        <Footer />
       </div>
-    </div>
+    </>
   );
 };
 

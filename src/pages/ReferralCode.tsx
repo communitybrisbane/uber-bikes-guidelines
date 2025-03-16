@@ -1,12 +1,36 @@
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import Navbar from '../components/Navbar';
 import { Gift, Clock, AlertTriangle, CheckCircle } from 'lucide-react';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
+import { useLocation } from 'react-router-dom';
 
 const ReferralCode = () => {
+  const location = useLocation();
+
+  // Handle scroll to sections when page loads or hash changes
+  useEffect(() => {
+    if (location.hash) {
+      // Remove the # character
+      const id = location.hash.substring(1);
+      const element = document.getElementById(id);
+      if (element) {
+        // Wait a bit for the page to render completely
+        setTimeout(() => {
+          window.scrollTo({
+            top: element.offsetTop - 100, // Adjust offset as needed
+            behavior: 'smooth'
+          });
+        }, 100);
+      }
+    } else {
+      // Scroll to top when page loads without hash
+      window.scrollTo(0, 0);
+    }
+  }, [location]);
+
   return (
     <>
       <Helmet>
@@ -98,13 +122,13 @@ const ReferralCode = () => {
                 <div className="mb-8 inline-block">
                   <h3 className="text-2xl font-bold mb-4">有効な紹介コード</h3>
                   <div className="bg-uber-black text-white text-2xl font-mono py-4 px-8 rounded-lg">
-                    CBRIS2024
+                    353ebz8exhf7
                   </div>
-                  <p className="text-sm text-gray-500 mt-2">※ 2024年6月現在有効なコードです</p>
+                  <p className="text-sm text-gray-500 mt-2">※ 2025年3月現在有効なコードです</p>
                 </div>
 
                 <p className="text-lg mb-6">
-                  最新の紹介コードや詳細について、お気軽にお問い合わせください。
+                  紹介コードについての詳細は、お気軽にInstagramにお問い合わせください。
                 </p>
                 
                 <a 
@@ -113,7 +137,7 @@ const ReferralCode = () => {
                   rel="noopener noreferrer"
                   className="uber-button"
                 >
-                  Instagramで最新情報をチェック
+                  Instagramで問い合わせる
                 </a>
               </div>
             </div>

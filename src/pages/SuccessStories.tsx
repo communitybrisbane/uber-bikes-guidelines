@@ -1,13 +1,37 @@
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import Navbar from '../components/Navbar';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { UserCircle, MessageSquare, TrendingUp } from 'lucide-react';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
+import { useLocation } from 'react-router-dom';
 
 const SuccessStories = () => {
+  const location = useLocation();
+
+  // Handle scroll to sections when page loads or hash changes
+  useEffect(() => {
+    if (location.hash) {
+      // Remove the # character
+      const id = location.hash.substring(1);
+      const element = document.getElementById(id);
+      if (element) {
+        // Wait a bit for the page to render completely
+        setTimeout(() => {
+          window.scrollTo({
+            top: element.offsetTop - 100, // Adjust offset as needed
+            behavior: 'smooth'
+          });
+        }, 100);
+      }
+    } else {
+      // Scroll to top when page loads without hash
+      window.scrollTo(0, 0);
+    }
+  }, [location]);
+
   return (
     <>
       <Helmet>
@@ -170,24 +194,18 @@ const SuccessStories = () => {
               </Tabs>
               
               <div className="mt-12 text-center">
-                <h3 className="text-2xl font-bold mb-4">あなたも成功事例の一員に</h3>
+                <h3 className="text-2xl font-bold mb-4">詳細なデータはInstagramで</h3>
                 <p className="text-lg mb-6">
-                  効率的な稼ぎ方のコツを学んで、ブリスベンでの生活を充実させましょう！
+                  より詳しい情報が必要な場合は、Instagramのダイレクトメッセージからお問い合わせください。
                 </p>
-                <div className="flex flex-col sm:flex-row justify-center gap-4">
+                <div className="flex justify-center">
                   <a 
                     href="https://instagram.com/community_brisbane" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="uber-button"
                   >
-                    成功事例をもっと見る
-                  </a>
-                  <a 
-                    href="#contact" 
-                    className="uber-outline-button"
-                  >
-                    相談してみる
+                    Instagramでお問い合わせ
                   </a>
                 </div>
               </div>

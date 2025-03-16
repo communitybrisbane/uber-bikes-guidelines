@@ -1,13 +1,36 @@
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
+import { useLocation } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import RegistrationGuide from '../components/RegistrationGuide';
-import Support from '../components/Support';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 
 const Registration = () => {
+  const location = useLocation();
+
+  // Handle scroll to sections when page loads or hash changes
+  useEffect(() => {
+    if (location.hash) {
+      // Remove the # character
+      const id = location.hash.substring(1);
+      const element = document.getElementById(id);
+      if (element) {
+        // Wait a bit for the page to render completely
+        setTimeout(() => {
+          window.scrollTo({
+            top: element.offsetTop - 100, // Adjust offset as needed
+            behavior: 'smooth'
+          });
+        }, 100);
+      }
+    } else {
+      // Scroll to top when page loads without hash
+      window.scrollTo(0, 0);
+    }
+  }, [location]);
+
   return (
     <>
       <Helmet>
@@ -27,7 +50,6 @@ const Registration = () => {
             </div>
           </div>
           <RegistrationGuide />
-          <Support />
           <Contact />
         </main>
         <Footer />

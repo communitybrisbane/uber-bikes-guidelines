@@ -2,6 +2,7 @@
 import { useRef, useEffect, useState } from 'react';
 import { 
   Bike, 
+  Car,
   Smartphone, 
   Mail, 
   FileCheck, 
@@ -12,7 +13,6 @@ import {
   ChevronDown,
   ChevronUp 
 } from 'lucide-react';
-import { Link } from 'react-router-dom';
 
 const steps = [
   {
@@ -25,8 +25,7 @@ const steps = [
       { item: "メールアドレス", description: "アカウント登録用" },
       { item: "海外銀行のキャッシュカード", description: "Wiseなど" },
       { item: "Tax File Number（TFN）", description: "ABN取得時に必要" },
-      { item: "クライムチェックの支払い用クレジットカード", description: "" },
-      { item: "配達バッグの購入費用", description: "約$50 AUD目安" }
+      { item: "クライムチェックの支払い用クレジットカード", description: "約$40～50 AUD目安" }
     ]
   },
   {
@@ -56,7 +55,7 @@ const steps = [
     id: 5,
     title: "配達手段の選択",
     icon: <Bike className="text-uber-green" size={28} />,
-    content: "「自転車」を選びます（電動自転車も「自転車」扱い）"
+    content: "「自転車」または「車」を選択します（電動自転車も「自転車」扱い）"
   },
   {
     id: 6,
@@ -88,9 +87,9 @@ const steps = [
   },
   {
     id: 10,
-    title: "配達バッグの注文",
+    title: "配達バッグの準備",
     icon: <Clock className="text-uber-green" size={28} />,
-    content: "バッグの配送には約4日かかり、バッグが届くまでアカウントは有効化されませんので、早めに手配してください。"
+    content: "配達バッグは無料で提供されます。バッグが届くまでアカウントは有効化されませんので、早めに手配してください。"
   },
   {
     id: 11,
@@ -216,15 +215,16 @@ const RegistrationGuide = () => {
 
         <div className="text-center mt-12">
           <p className="mb-6 text-lg font-medium">
-            より詳しい登録方法を知りたい方はこちら
+            内容に間違いがある場合は、Instagramからお気軽にご連絡ください。
           </p>
-          <Link 
-            to="/registration" 
+          <a 
+            href="https://instagram.com/community_brisbane" 
+            target="_blank" 
+            rel="noopener noreferrer"
             className="uber-button inline-flex items-center space-x-2"
           >
-            <span>詳細な登録ガイドへ</span>
-            <ArrowRight size={18} />
-          </Link>
+            <span>Instagramで問い合わせる</span>
+          </a>
         </div>
       </div>
     </section>

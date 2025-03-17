@@ -204,23 +204,6 @@ const IncomeBreakdown = () => {
                   </ul>
                 </div>
               </div>
-
-              <div className="bg-gradient-to-r from-uber-green to-uber-blue p-6 rounded-xl mt-8 shadow-lg">
-                <div className="flex flex-col md:flex-row items-center justify-between">
-                  <div className="mb-4 md:mb-0">
-                    <h3 className="text-xl font-bold">実際の稼働データを共有しています</h3>
-                    <p>実績ベースの詳細なアドバイスや収入例をチェック</p>
-                  </div>
-                  <a 
-                    href="https://instagram.com/community_brisbane" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="bg-white text-uber-black font-bold px-6 py-3 rounded-md hover:bg-gray-100 transition-colors"
-                  >
-                    Instagramをフォロー
-                  </a>
-                </div>
-              </div>
             </div>
           )}
         </div>

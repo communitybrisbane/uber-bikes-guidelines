@@ -71,7 +71,7 @@ const steps = [
     id: 7,
     title: "背景調査（クライムチェック）",
     icon: <Clock className="text-uber-green" size={28} />,
-    content: "費用は約$40～50 AUDかかり、完了までに約3日かかります。"
+    content: "費用は約$40～50 AUDかかり、完了までに約3日かかります。数回の配達ですぐに回収できます。"
   },
   {
     id: 8,

@@ -4,11 +4,9 @@ import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
-import RegistrationGuide from '../components/RegistrationGuide';
-import EarningsTips from '../components/EarningsTips';
-import IncomeBreakdown from '../components/IncomeBreakdown';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
+import { Smartphone, FileCheck, DollarSign, Clock, CheckCircle, ArrowRight } from 'lucide-react';
 
 const Index = () => {
   return (
@@ -33,28 +31,31 @@ const Index = () => {
             </div>
             
             <div className="container mx-auto px-4 relative z-10">
-              <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Uber Eatsで新しい可能性を</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">Uber Eatsで自由な働き方を実現</h2>
+              <p className="text-xl text-center text-gray-700 max-w-3xl mx-auto mb-12">
+                好きな時間に働ける！スキマ時間に最適！迷ったらとりあえず登録！
+              </p>
               
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 <Link to="/registration" className="glass-panel hover:shadow-glass-hover rounded-xl p-6 text-center transition-all duration-300 hover:-translate-y-1">
                   <div className="bg-uber-green/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-uber-green"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                    <FileCheck className="text-uber-green" size={24} />
                   </div>
-                  <h3 className="text-xl font-bold mb-3">登録方法</h3>
+                  <h3 className="text-xl font-bold mb-3">登録は簡単！すぐに収入UP</h3>
                   <p className="text-gray-600">Uber Eats配達員になるための詳しい登録手順を解説します。</p>
                 </Link>
                 
                 <Link to="/earning-tips" className="glass-panel hover:shadow-glass-hover rounded-xl p-6 text-center transition-all duration-300 hover:-translate-y-1">
                   <div className="bg-uber-green/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-uber-green"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                    <Clock className="text-uber-green" size={24} />
                   </div>
-                  <h3 className="text-xl font-bold mb-3">稼ぎ方のコツ</h3>
+                  <h3 className="text-xl font-bold mb-3">スキマ時間の有効活用</h3>
                   <p className="text-gray-600">効率よく稼ぐための時間帯やエリア選びのコツをご紹介します。</p>
                 </Link>
                 
                 <Link to="/success-stories" className="glass-panel hover:shadow-glass-hover rounded-xl p-6 text-center transition-all duration-300 hover:-translate-y-1">
                   <div className="bg-uber-green/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-uber-green"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>
+                    <CheckCircle className="text-uber-green" size={24} />
                   </div>
                   <h3 className="text-xl font-bold mb-3">成功事例</h3>
                   <p className="text-gray-600">実際に活動している配達員の体験談と収入事例を紹介します。</p>
@@ -62,9 +63,9 @@ const Index = () => {
                 
                 <Link to="/referral-code" className="glass-panel hover:shadow-glass-hover rounded-xl p-6 text-center transition-all duration-300 hover:-translate-y-1">
                   <div className="bg-uber-green/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-uber-green"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+                    <DollarSign className="text-uber-green" size={24} />
                   </div>
-                  <h3 className="text-xl font-bold mb-3">紹介コード</h3>
+                  <h3 className="text-xl font-bold mb-3">$500ボーナスをGET</h3>
                   <p className="text-gray-600">$500ボーナスがもらえる紹介コードの使い方と注意点。</p>
                 </Link>
                 
@@ -107,9 +108,121 @@ const Index = () => {
             </div>
           </section>
           
-          <RegistrationGuide />
-          <EarningsTips />
-          <IncomeBreakdown />
+          <section className="py-24 bg-white">
+            <div className="container mx-auto px-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">Uber Eats配達員登録の流れ</h2>
+              
+              <div className="max-w-4xl mx-auto">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+                  <div className="glass-panel rounded-xl p-6">
+                    <div className="flex items-center space-x-4 mb-6">
+                      <div className="bg-uber-green rounded-full w-12 h-12 flex items-center justify-center text-white font-bold text-xl">1</div>
+                      <h3 className="text-xl font-bold">アプリ内の手続き</h3>
+                    </div>
+                    
+                    <ul className="space-y-4">
+                      <li className="flex items-start">
+                        <ArrowRight className="text-uber-green mt-1 mr-2 flex-shrink-0" size={16} />
+                        <p>アカウント作成（メール、電話番号登録）</p>
+                      </li>
+                      <li className="flex items-start">
+                        <ArrowRight className="text-uber-green mt-1 mr-2 flex-shrink-0" size={16} />
+                        <p>紹介コード入力（特典$500獲得）</p>
+                      </li>
+                      <li className="flex items-start">
+                        <ArrowRight className="text-uber-green mt-1 mr-2 flex-shrink-0" size={16} />
+                        <p>身分証明書のアップロード（パスポート）</p>
+                      </li>
+                      <li className="flex items-start">
+                        <ArrowRight className="text-uber-green mt-1 mr-2 flex-shrink-0" size={16} />
+                        <p>銀行口座情報の登録（報酬受取用）</p>
+                      </li>
+                    </ul>
+                  </div>
+                  
+                  <div className="glass-panel rounded-xl p-6">
+                    <div className="flex items-center space-x-4 mb-6">
+                      <div className="bg-uber-green rounded-full w-12 h-12 flex items-center justify-center text-white font-bold text-xl">2</div>
+                      <h3 className="text-xl font-bold">アプリ外の手続き</h3>
+                    </div>
+                    
+                    <ul className="space-y-4">
+                      <li className="flex items-start">
+                        <ArrowRight className="text-uber-green mt-1 mr-2 flex-shrink-0" size={16} />
+                        <div>
+                          <p className="font-medium">TFN取得（個人納税番号）</p>
+                          <p className="text-sm text-gray-600">10〜28日かかるので早めに申請</p>
+                        </div>
+                      </li>
+                      <li className="flex items-start">
+                        <ArrowRight className="text-uber-green mt-1 mr-2 flex-shrink-0" size={16} />
+                        <div>
+                          <p className="font-medium">ABN取得（事業者番号）</p>
+                          <p className="text-sm text-gray-600">TFN必須、即日〜数日で取得可能</p>
+                        </div>
+                      </li>
+                      <li className="flex items-start">
+                        <ArrowRight className="text-uber-green mt-1 mr-2 flex-shrink-0" size={16} />
+                        <div>
+                          <p className="font-medium">クライムチェック（犯罪歴確認）</p>
+                          <p className="text-sm text-gray-600">費用約$40、完了まで約3日</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                
+                <div className="text-center mt-16">
+                  <div className="inline-block bg-uber-green/10 p-6 rounded-xl border border-uber-green/30">
+                    <p className="text-lg font-bold mb-2">配達開始までの期間：<span className="text-uber-green">約7〜14日</span></p>
+                    <p className="text-gray-600">TFN申請を早めに行うことで、配達開始までの期間を短縮できます</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <section className="py-16 bg-uber-lightGray">
+            <div className="container mx-auto px-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Uber Eatsの魅力</h2>
+              
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div className="glass-panel rounded-xl p-6 text-center">
+                  <div className="bg-uber-green/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                    <Clock className="text-uber-green" size={24} />
+                  </div>
+                  <h3 className="text-xl font-bold mb-3">好きな時間に働ける</h3>
+                  <p className="text-gray-600">シフトの縛りなし！自分の都合に合わせて自由に稼働できます。</p>
+                </div>
+                
+                <div className="glass-panel rounded-xl p-6 text-center">
+                  <div className="bg-uber-green/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                    <DollarSign className="text-uber-green" size={24} />
+                  </div>
+                  <h3 className="text-xl font-bold mb-3">登録は簡単！</h3>
+                  <p className="text-gray-600">オンライン手続きがメインで、書類も最小限。簡単に始められます。</p>
+                </div>
+                
+                <div className="glass-panel rounded-xl p-6 text-center">
+                  <div className="bg-uber-green/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                    <Smartphone className="text-uber-green" size={24} />
+                  </div>
+                  <h3 className="text-xl font-bold mb-3">スキマ時間に最適</h3>
+                  <p className="text-gray-600">空いた時間だけでも稼働OK！副業として最適です。</p>
+                </div>
+              </div>
+              
+              <div className="text-center mt-12">
+                <Link 
+                  to="/registration" 
+                  className="uber-button text-lg px-8 py-4 shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all"
+                >
+                  今すぐ登録する
+                </Link>
+              </div>
+            </div>
+          </section>
+          
           <Contact />
         </main>
         <Footer />

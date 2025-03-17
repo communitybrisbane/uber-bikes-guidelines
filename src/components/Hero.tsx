@@ -6,6 +6,12 @@ const Hero = () => {
     const guideElement = document.getElementById('registration-guide');
     if (guideElement) {
       guideElement.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      // If we're not on the registration page with the guide
+      window.scrollTo({
+        top: window.innerHeight,
+        behavior: 'smooth'
+      });
     }
   };
 
@@ -15,20 +21,20 @@ const Hero = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat" 
         style={{ 
-          backgroundImage: 'url(https://images.unsplash.com/photo-1561122092-afa9fe49afa3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)', 
+          backgroundImage: 'url(https://images.unsplash.com/photo-1543807535-eceef0bc6599?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)', 
           filter: 'brightness(0.7)' 
         }}
       />
       
       {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-t from-uber-black/70 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-t from-uber-black/80 to-transparent" />
       
       {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="animate-fade-up">
           <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-            オーストラリアでの生活の幅を広げる<br className="hidden sm:inline" />
-            <span className="text-uber-green">uber 配達員</span>
+            スキマ時間で簡単に収入UP！<br className="hidden sm:inline" />
+            <span className="text-uber-green">登録費用$40で始める新しい働き方</span>
           </h1>
           
           <p className="text-white text-xl md:text-2xl mb-8 max-w-2xl mx-auto">

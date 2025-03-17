@@ -26,7 +26,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-bold text-lg mb-1">Instagram</h4>
-                    <p className="text-gray-600 mb-2">唯一の連絡手段です</p>
+                    <p className="text-gray-600 mb-2">間違いやご不明点がある場合のみ</p>
                     <a 
                       href="https://instagram.com/community_brisbane" 
                       target="_blank" 
@@ -43,6 +43,12 @@ const Contact = () => {
                 <h4 className="font-bold text-lg mb-4">オンライン講習のご案内</h4>
                 <p className="text-gray-600 mb-4">
                   Instagramにてuberの稼ぎ方についてオンライン講習予約を実施中。
+                </p>
+                <p className="text-gray-600 mb-4">
+                  詳細なデータを知りたい方はオンライン講義を予約してください。
+                </p>
+                <p className="text-gray-600 mb-4">
+                  Instagramにはデータ公開していないです。DMのみの限定な情報です。
                 </p>
                 <p className="text-gray-600 mb-4">
                   講習ではその地域に合わせた稼げる場所や時間帯や独自に集めたデータから効率よく稼ぐ方法を教えます。

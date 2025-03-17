@@ -49,26 +49,8 @@ const EarningTips = () => {
                 ブリスベンでのUber Eats配達で効率的に稼ぐためのスケジュール例と実践的なアドバイスをご紹介します。
               </p>
               <p className="text-lg text-center text-uber-green mt-4">
-                詳細なデータについては、Instagramのダイレクトメッセージでお問い合わせください。
+                詳細なデータについては、Instagramからお問い合わせください。
               </p>
-            </div>
-          </div>
-
-          <div className="max-w-4xl mx-auto my-12 px-4">
-            <div className="bg-uber-green/10 p-6 rounded-xl border border-uber-green/30 text-center">
-              <h2 className="text-2xl font-bold mb-4">紹介コード</h2>
-              <div className="bg-white p-6 rounded-lg shadow-md">
-                <p className="font-bold text-lg mb-3">登録時に必ず入力してください！</p>
-                <div className="bg-uber-green p-4 rounded-md mb-4">
-                  <p className="text-white font-mono text-2xl font-bold tracking-wider">353ebz8exhf7</p>
-                </div>
-                <p className="text-gray-700 mb-3">
-                  このコードを入力することで、<span className="font-bold text-uber-green">$500の特典</span>を受け取ることができます。
-                </p>
-                <p className="text-red-500 text-sm font-semibold">
-                  ※ 登録時に入力しないと後から追加することはできません！
-                </p>
-              </div>
             </div>
           </div>
           

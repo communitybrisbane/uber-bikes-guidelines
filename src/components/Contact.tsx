@@ -9,7 +9,7 @@ const Contact = () => {
           お問い合わせ
         </h2>
         <p className="text-lg text-gray-700 mt-4">
-          Uber Eats配達員登録や活動に関するご質問は、Instagramからお気軽にお問い合わせください。
+          間違いやご不明点がある場合のみ、Instagramからお問い合わせいただけます。
         </p>
       </div>
 
@@ -40,19 +40,20 @@ const Contact = () => {
               </div>
               
               <div className="mt-8 pt-6 border-t border-gray-200">
-                <h4 className="font-bold text-lg mb-4">重要なお知らせ</h4>
+                <h4 className="font-bold text-lg mb-4">オンライン講習のご案内</h4>
                 <p className="text-gray-600 mb-4">
-                  community_brisbaneは基本的にサポートを行いません。当サイトの情報は参考用としてご利用ください。
+                  Instagramにてuberの稼ぎ方についてオンライン講習予約を実施中。
                 </p>
                 <p className="text-gray-600 mb-4">
-                  よくある質問はFAQページにまとめています。
-                  まずはそちらをご確認ください。
+                  講習ではその地域に合わせた稼げる場所や時間帯や独自に集めたデータから効率よく稼ぐ方法を教えます。
                 </p>
                 <a 
-                  href="/faq" 
+                  href="https://instagram.com/community_brisbane" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
                   className="uber-outline-button inline-block"
                 >
-                  FAQを見る
+                  Instagram で詳細を見る
                 </a>
               </div>
             </div>
@@ -86,11 +87,6 @@ const Contact = () => {
                   紹介コードについて詳細を見る
                 </a>
               </div>
-              
-              <p className="mt-6 text-sm text-white/70">
-                ※ お問い合わせは必ずInstagram（@community_brisbane）からお願いします。
-                その他の連絡手段では対応いたしかねます。
-              </p>
             </div>
           </div>
         </div>

@@ -212,20 +212,6 @@ const RegistrationGuide = () => {
             </button>
           </div>
         )}
-
-        <div className="text-center mt-12">
-          <p className="mb-6 text-lg font-medium">
-            内容に間違いがある場合は、Instagramからお気軽にご連絡ください。
-          </p>
-          <a 
-            href="https://instagram.com/community_brisbane" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="uber-button inline-flex items-center space-x-2"
-          >
-            <span>Instagramで問い合わせる</span>
-          </a>
-        </div>
       </div>
     </section>
   );

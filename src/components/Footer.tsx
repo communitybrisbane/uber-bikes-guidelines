@@ -1,6 +1,6 @@
 
 import { Link } from 'react-router-dom';
-import { Instagram, Mail, ArrowUpRight } from 'lucide-react';
+import { Instagram, ArrowUpRight } from 'lucide-react';
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -34,14 +34,10 @@ const Footer = () => {
               >
                 <Instagram size={24} />
               </a>
-              <a 
-                href="mailto:contact@communitybrisbane.com.au" 
-                className="text-gray-400 hover:text-uber-green transition-colors"
-                aria-label="Email"
-              >
-                <Mail size={24} />
-              </a>
             </div>
+            <p className="text-gray-400 mt-6 text-sm">
+              内容に間違いがある場合は、Instagramからお気軽にご連絡ください。
+            </p>
           </div>
 
           {/* Quick Links */}
@@ -111,7 +107,7 @@ const Footer = () => {
               </li>
               <li>
                 <a 
-                  href="https://wise.com/" 
+                  href="https://wise.com/invite/ihpc/takumat89" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-white transition-colors inline-flex items-center"

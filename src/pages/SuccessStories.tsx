@@ -192,23 +192,6 @@ const SuccessStories = () => {
                   </div>
                 </TabsContent>
               </Tabs>
-              
-              <div className="mt-12 text-center">
-                <h3 className="text-2xl font-bold mb-4">詳細なデータはInstagramで</h3>
-                <p className="text-lg mb-6">
-                  より詳しい情報が必要な場合は、Instagramのダイレクトメッセージからお問い合わせください。
-                </p>
-                <div className="flex justify-center">
-                  <a 
-                    href="https://instagram.com/community_brisbane" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="uber-button"
-                  >
-                    Instagramでお問い合わせ
-                  </a>
-                </div>
-              </div>
             </div>
           </section>
 

@@ -48,9 +48,6 @@ const EarningTips = () => {
               <p className="text-xl text-center text-gray-700 max-w-3xl mx-auto">
                 ブリスベンでのUber Eats配達で効率的に稼ぐためのスケジュール例と実践的なアドバイスをご紹介します。
               </p>
-              <p className="text-lg text-center text-uber-green mt-4">
-                詳細なデータについては、Instagramからお問い合わせください。
-              </p>
             </div>
           </div>
           

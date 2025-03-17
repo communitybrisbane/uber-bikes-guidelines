@@ -38,6 +38,10 @@ const Hero = () => {
             </span>
           </p>
           
+          <div className="glass-panel-dark p-4 rounded-lg inline-block mb-8">
+            <p className="text-white text-lg font-mono tracking-wider">紹介コード: <span className="text-uber-green font-bold">353ebz8exhf7</span></p>
+          </div>
+          
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10">
             <a 
               href="https://www.uber.com/signup/drive/deliver/?invite_code=1248nns95uhm"
@@ -47,13 +51,6 @@ const Hero = () => {
             >
               今すぐ登録する
             </a>
-            
-            <button 
-              onClick={scrollToGuide}
-              className="uber-outline-button text-lg"
-            >
-              詳細を見る
-            </button>
           </div>
         </div>
         

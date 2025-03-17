@@ -107,22 +107,6 @@ const Faq = () => {
           </div>
 
           <section className="section-container bg-white" id="faq-section">
-            <div className="max-w-4xl mx-auto mb-12 p-6 bg-uber-green/10 rounded-xl border border-uber-green/30">
-              <h2 className="text-2xl font-bold text-center mb-4">紹介コード</h2>
-              <div className="bg-white p-6 rounded-lg shadow-md text-center">
-                <p className="font-bold text-lg mb-3">登録時に必ず入力してください！</p>
-                <div className="bg-uber-green p-4 rounded-md mb-4">
-                  <p className="text-white font-mono text-2xl font-bold tracking-wider">353ebz8exhf7</p>
-                </div>
-                <p className="text-gray-700 mb-3">
-                  このコードを入力することで、<span className="font-bold text-uber-green">$500の特典</span>を受け取ることができます。
-                </p>
-                <p className="text-red-500 text-sm font-semibold">
-                  ※ 登録時に入力しないと後から追加することはできません！
-                </p>
-              </div>
-            </div>
-
             <div className="max-w-3xl mx-auto">
               <h3 className="text-2xl font-bold mb-6 text-center">質問と回答</h3>
               <div className="space-y-4">
@@ -154,22 +138,6 @@ const Faq = () => {
                     </div>
                   </div>
                 ))}
-              </div>
-
-              <div className="mt-12 text-center">
-                <p className="text-lg mb-6">
-                  その他の質問がある場合は、Instagramからお問い合わせください。
-                </p>
-                <div className="flex flex-col sm:flex-row justify-center gap-4">
-                  <a 
-                    href="https://instagram.com/community_brisbane" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="uber-button"
-                  >
-                    Instagramでメッセージする
-                  </a>
-                </div>
               </div>
             </div>
           </section>

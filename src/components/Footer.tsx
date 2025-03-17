@@ -21,8 +21,7 @@ const Footer = () => {
               <span>brisbane</span>
             </Link>
             <p className="text-gray-400 mb-6">
-              ブリスベンでのワーキングホリデー滞在をサポートする情報コミュニティです。
-              効率的な稼ぎ方や生活に役立つ情報を発信しています。
+              ブリスベンでのワーキングホリデー滞在をサポートする情報コミュニティです。生活に役立つ情報を発信しています。
             </p>
             <div className="flex space-x-4">
               <a 
@@ -148,4 +147,3 @@ const Footer = () => {
 };
 
 export default Footer;
-

@@ -82,7 +82,7 @@ const Hero = () => {
               href="https://www.uber.com/signup/drive/deliver/?invite_code=1248nns95uhm"
               target="_blank"
               rel="noopener noreferrer" 
-              className="uber-button text-lg px-8 py-4 shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all"
+              className="uber-button text-lg px-8 py-4 shadow-lg"
             >
               今すぐ登録する
             </a>

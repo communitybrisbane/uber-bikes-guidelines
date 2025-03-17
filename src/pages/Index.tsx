@@ -20,15 +20,7 @@ const Index = () => {
         <main>
           <Hero />
           
-          <section className="relative py-20 overflow-hidden">
-            <div className="absolute inset-0 z-0">
-              <img 
-                src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?q=80&w=2070&auto=format&fit=crop" 
-                alt="オーストラリアの風景" 
-                className="w-full h-full object-cover opacity-10"
-              />
-            </div>
-            
+          <section className="relative py-20 bg-gradient-to-b from-white to-uber-lightGray overflow-hidden">
             <div className="container mx-auto px-4 relative z-10">
               <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">Uber Eatsで自由な働き方を実現</h2>
               <p className="text-xl text-center text-gray-700 max-w-3xl mx-auto mb-12">
@@ -37,7 +29,7 @@ const Index = () => {
               
               <div className="max-w-4xl mx-auto mb-16">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                  <div className="glass-panel rounded-xl p-6 text-center transition-all duration-300 hover:-translate-y-1">
+                  <div className="bg-white rounded-xl shadow-lg p-6 text-center transition-all duration-300 hover:-translate-y-1 border-l-4 border-uber-green">
                     <div className="bg-uber-green/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                       <Clock className="text-uber-green" size={24} />
                     </div>
@@ -45,7 +37,7 @@ const Index = () => {
                     <p className="text-gray-600">自分のライフスタイルに合わせて働ける自由なシフトが魅力。短時間のスキマ時間にぴったり！</p>
                   </div>
                   
-                  <div className="glass-panel rounded-xl p-6 text-center transition-all duration-300 hover:-translate-y-1">
+                  <div className="bg-white rounded-xl shadow-lg p-6 text-center transition-all duration-300 hover:-translate-y-1 border-l-4 border-uber-green">
                     <div className="bg-uber-green/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                       <FileCheck className="text-uber-green" size={24} />
                     </div>
@@ -53,7 +45,7 @@ const Index = () => {
                     <p className="text-gray-600">オンライン手続きがメインで、すぐに収入が得られます。登録のハードルが低いのが特徴です。</p>
                   </div>
                   
-                  <div className="glass-panel rounded-xl p-6 text-center transition-all duration-300 hover:-translate-y-1">
+                  <div className="bg-white rounded-xl shadow-lg p-6 text-center transition-all duration-300 hover:-translate-y-1 border-l-4 border-uber-green">
                     <div className="bg-uber-green/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                       <DollarSign className="text-uber-green" size={24} />
                     </div>
@@ -269,3 +261,4 @@ const Index = () => {
 };
 
 export default Index;
+

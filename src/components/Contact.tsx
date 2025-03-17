@@ -9,7 +9,7 @@ const Contact = () => {
           お問い合わせ
         </h2>
         <p className="text-lg text-gray-700 mt-4">
-          間違いやご不明点がある場合のみ、Instagramからお問い合わせいただけます。
+          間違いや不明点がる際はお気軽にご連絡ください
         </p>
       </div>
 
@@ -113,4 +113,3 @@ const Contact = () => {
 };
 
 export default Contact;
-

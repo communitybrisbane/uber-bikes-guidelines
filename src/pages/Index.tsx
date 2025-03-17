@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
@@ -6,7 +5,7 @@ import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
-import { Smartphone, FileCheck, DollarSign, Clock, CheckCircle, ArrowRight } from 'lucide-react';
+import { Smartphone, FileCheck, DollarSign, Clock, CheckCircle, ArrowRight, Copy } from 'lucide-react';
 
 const Index = () => {
   return (

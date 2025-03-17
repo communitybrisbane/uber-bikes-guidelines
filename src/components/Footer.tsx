@@ -26,7 +26,7 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a 
-                href="https://instagram.com/communitybrisbane" 
+                href="https://instagram.com/community_brisbane" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-uber-green transition-colors"
@@ -85,6 +85,17 @@ const Footer = () => {
               </li>
               <li>
                 <a 
+                  href="https://apps.apple.com/au/app/uber-driver/id1131342792" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-white transition-colors inline-flex items-center"
+                >
+                  <span>Uber Driver App (iOS)</span>
+                  <ArrowUpRight size={14} className="ml-1" />
+                </a>
+              </li>
+              <li>
+                <a 
                   href="https://www.abr.gov.au/" 
                   target="_blank" 
                   rel="noopener noreferrer"
@@ -137,3 +148,4 @@ const Footer = () => {
 };
 
 export default Footer;
+

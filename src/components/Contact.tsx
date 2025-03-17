@@ -28,12 +28,12 @@ const Contact = () => {
                     <h4 className="font-bold text-lg mb-1">Instagram</h4>
                     <p className="text-gray-600 mb-2">間違いやご不明点がある場合のみ</p>
                     <a 
-                      href="https://instagram.com/communitybrisbane" 
+                      href="https://instagram.com/community_brisbane" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="text-uber-green font-medium hover:underline"
                     >
-                      @communitybrisbane
+                      @community_brisbane
                     </a>
                   </div>
                 </div>
@@ -54,7 +54,7 @@ const Contact = () => {
                   講習ではその地域に合わせた稼げる場所や時間帯や独自に集めたデータから効率よく稼ぐ方法を教えます。
                 </p>
                 <a 
-                  href="https://instagram.com/communitybrisbane" 
+                  href="https://instagram.com/community_brisbane" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="uber-outline-button inline-block"
@@ -96,7 +96,7 @@ const Contact = () => {
                   1対1の個別講習で、あなたの状況に合わせたアドバイスが受けられます。
                 </p>
                 <a 
-                  href="https://instagram.com/communitybrisbane" 
+                  href="https://instagram.com/community_brisbane" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="w-full bg-uber-green text-white font-bold py-3 px-6 rounded-md hover:bg-opacity-90 transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-uber-black inline-block text-center"
@@ -113,3 +113,4 @@ const Contact = () => {
 };
 
 export default Contact;
+

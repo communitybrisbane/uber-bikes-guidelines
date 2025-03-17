@@ -33,7 +33,7 @@ const ContactPage = () => {
   return (
     <>
       <Helmet>
-        <title>お問い合わせ | Uber Eats配達員登録ガイド | community_brisbane</title>
+        <title>お問い合わせ | Uber Eats配達員登録ガイド | communitybrisbane</title>
         <meta name="description" content="Uber Eats配達員登録に関するご質問やサポートのご依頼は、お気軽にお問い合わせください。" />
       </Helmet>
 
@@ -44,26 +44,8 @@ const ContactPage = () => {
             <div className="container mx-auto px-4">
               <h1 className="text-4xl md:text-5xl font-bold text-center mb-6">お問い合わせ</h1>
               <p className="text-xl text-center text-gray-700 max-w-3xl mx-auto">
-                登録方法のご質問などは、Instagram(@community_brisbane)からお気軽にお問い合わせください。
+                Instagramからお気軽にお問い合わせください。
               </p>
-            </div>
-          </div>
-
-          <div className="max-w-4xl mx-auto my-12 px-4">
-            <div className="bg-uber-green/10 p-6 rounded-xl border border-uber-green/30 text-center">
-              <h2 className="text-2xl font-bold mb-4">紹介コード</h2>
-              <div className="bg-white p-6 rounded-lg shadow-md">
-                <p className="font-bold text-lg mb-3">登録時に必ず入力してください！</p>
-                <div className="bg-uber-green p-4 rounded-md mb-4">
-                  <p className="text-white font-mono text-2xl font-bold tracking-wider">353ebz8exhf7</p>
-                </div>
-                <p className="text-gray-700 mb-3">
-                  このコードを入力することで、<span className="font-bold text-uber-green">$500の特典</span>を受け取ることができます。
-                </p>
-                <p className="text-red-500 text-sm font-semibold">
-                  ※ 登録時に入力しないと後から追加することはできません！
-                </p>
-              </div>
             </div>
           </div>
 

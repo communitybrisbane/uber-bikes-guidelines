@@ -1,7 +1,10 @@
 
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, Copy } from 'lucide-react';
+import { useToast } from '@/hooks/use-toast';
 
 const Hero = () => {
+  const { toast } = useToast();
+  
   const scrollToGuide = () => {
     const guideElement = document.getElementById('registration-guide');
     if (guideElement) {
@@ -13,6 +16,23 @@ const Hero = () => {
         behavior: 'smooth'
       });
     }
+  };
+
+  const copyReferralCode = () => {
+    navigator.clipboard.writeText('353ebz8exhf7')
+      .then(() => {
+        toast({
+          title: "紹介コードをコピーしました",
+          description: "登録フォームに貼り付けてください",
+        });
+      })
+      .catch(() => {
+        toast({
+          title: "コピーに失敗しました",
+          description: "手動でコピーしてください",
+          variant: "destructive",
+        });
+      });
   };
 
   return (
@@ -34,7 +54,7 @@ const Hero = () => {
         <div className="animate-fade-up">
           <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
             スキマ時間で簡単に収入UP！<br className="hidden sm:inline" />
-            <span className="text-uber-green">登録費用$40で始める新しい働き方</span>
+            <span className="text-uber-green">＄50で始める副業uber</span>
           </h1>
           
           <p className="text-white text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
@@ -45,7 +65,16 @@ const Hero = () => {
           </p>
           
           <div className="glass-panel-dark p-4 rounded-lg inline-block mb-8">
-            <p className="text-white text-lg font-mono tracking-wider">紹介コード: <span className="text-uber-green font-bold">353ebz8exhf7</span></p>
+            <div className="flex items-center justify-center">
+              <p className="text-white text-lg font-mono tracking-wider mr-2">紹介コード: <span className="text-uber-green font-bold">353ebz8exhf7</span></p>
+              <button 
+                onClick={copyReferralCode}
+                className="bg-uber-green/20 hover:bg-uber-green/30 p-2 rounded-md transition-colors"
+                aria-label="紹介コードをコピー"
+              >
+                <Copy size={18} className="text-uber-green" />
+              </button>
+            </div>
           </div>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10">

@@ -12,7 +12,7 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Uber Eats配達員登録ガイド | community_brisbane</title>
+        <title>Uber Eats配達員登録ガイド | communitybrisbane</title>
         <meta name="description" content="オーストラリア・ブリスベンでのUber Eats配達員登録方法と効率的な稼ぎ方のガイド。ワーキングホリデー向けの情報が満載。" />
       </Helmet>
 
@@ -33,8 +33,36 @@ const Index = () => {
             <div className="container mx-auto px-4 relative z-10">
               <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">Uber Eatsで自由な働き方を実現</h2>
               <p className="text-xl text-center text-gray-700 max-w-3xl mx-auto mb-12">
-                好きな時間に働ける！スキマ時間に最適！迷ったらとりあえず登録！
+                好きな時間に働ける！短時間のスキマ時間にぴったり！迷ったらとりあえず登録！
               </p>
+              
+              <div className="max-w-4xl mx-auto mb-16">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                  <div className="glass-panel rounded-xl p-6 text-center transition-all duration-300 hover:-translate-y-1">
+                    <div className="bg-uber-green/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                      <Clock className="text-uber-green" size={24} />
+                    </div>
+                    <h3 className="text-xl font-bold mb-3">好きな時間に働ける</h3>
+                    <p className="text-gray-600">自分のライフスタイルに合わせて働ける自由なシフトが魅力。短時間のスキマ時間にぴったり！</p>
+                  </div>
+                  
+                  <div className="glass-panel rounded-xl p-6 text-center transition-all duration-300 hover:-translate-y-1">
+                    <div className="bg-uber-green/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                      <FileCheck className="text-uber-green" size={24} />
+                    </div>
+                    <h3 className="text-xl font-bold mb-3">登録は簡単！今すぐ始められる</h3>
+                    <p className="text-gray-600">オンライン手続きがメインで、すぐに収入が得られます。登録のハードルが低いのが特徴です。</p>
+                  </div>
+                  
+                  <div className="glass-panel rounded-xl p-6 text-center transition-all duration-300 hover:-translate-y-1">
+                    <div className="bg-uber-green/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                      <DollarSign className="text-uber-green" size={24} />
+                    </div>
+                    <h3 className="text-xl font-bold mb-3">迷ったらとりあえず登録！</h3>
+                    <p className="text-gray-600">登録は無料で始められるので、とりあえず登録してみましょう。クライムチェック($50)は後から支払いOK。</p>
+                  </div>
+                </div>
+              </div>
               
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 <Link to="/registration" className="glass-panel hover:shadow-glass-hover rounded-xl p-6 text-center transition-all duration-300 hover:-translate-y-1">
@@ -100,8 +128,18 @@ const Index = () => {
               <div className="bg-white/80 backdrop-blur-sm p-6 rounded-xl max-w-2xl mx-auto shadow-lg">
                 <h2 className="text-3xl font-bold text-center mb-4">紹介コードで$500ボーナス</h2>
                 <p className="text-lg text-center mb-6">登録時に紹介コードを入力することで特典を受け取れます</p>
-                <div className="bg-uber-green/10 p-4 rounded-md text-center mb-4">
-                  <p className="text-uber-green font-mono text-2xl font-bold tracking-wider">353ebz8exhf7</p>
+                <div className="bg-uber-green/10 p-4 rounded-md text-center mb-4 flex items-center justify-center">
+                  <p className="text-uber-green font-mono text-2xl font-bold tracking-wider mr-2">353ebz8exhf7</p>
+                  <button 
+                    onClick={() => {
+                      navigator.clipboard.writeText('353ebz8exhf7');
+                      alert('紹介コードをコピーしました');
+                    }}
+                    className="bg-uber-green/20 hover:bg-uber-green/30 p-2 rounded-md transition-colors"
+                    aria-label="紹介コードをコピー"
+                  >
+                    <Copy size={18} className="text-uber-green" />
+                  </button>
                 </div>
                 <p className="text-center text-gray-600 text-sm">※ 登録時に入力しないと後から追加することはできません</p>
               </div>
@@ -165,7 +203,7 @@ const Index = () => {
                         <ArrowRight className="text-uber-green mt-1 mr-2 flex-shrink-0" size={16} />
                         <div>
                           <p className="font-medium">クライムチェック（犯罪歴確認）</p>
-                          <p className="text-sm text-gray-600">費用約$40、完了まで約3日</p>
+                          <p className="text-sm text-gray-600">費用約$50、完了まで約3日</p>
                         </div>
                       </li>
                     </ul>

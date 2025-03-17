@@ -17,7 +17,7 @@ const Footer = () => {
           {/* Logo and About */}
           <div className="col-span-1">
             <Link to="/" className="flex items-center space-x-2 text-white font-bold text-xl mb-4">
-              <span className="text-uber-green">community_</span>
+              <span className="text-uber-green">community</span>
               <span>brisbane</span>
             </Link>
             <p className="text-gray-400 mb-6">
@@ -26,7 +26,7 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a 
-                href="https://instagram.com/community_brisbane" 
+                href="https://instagram.com/communitybrisbane" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-uber-green transition-colors"
@@ -122,7 +122,7 @@ const Footer = () => {
 
         <div className="mt-12 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-500 text-sm mb-4 md:mb-0">
-            &copy; {new Date().getFullYear()} community_brisbane. All rights reserved.
+            &copy; {new Date().getFullYear()} communitybrisbane. All rights reserved.
           </p>
           <button 
             onClick={scrollToTop}

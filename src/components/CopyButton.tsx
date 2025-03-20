@@ -29,10 +29,10 @@ const CopyButton = ({ code }: CopyButtonProps) => {
   return (
     <button 
       onClick={handleCopy}
-      className="bg-uber-green/20 hover:bg-uber-green/30 p-2 rounded-md transition-colors"
+      className="bg-indigo-100 hover:bg-indigo-200 p-2 rounded-md transition-colors"
       aria-label="紹介コードをコピー"
     >
-      <Copy size={18} className="text-uber-green" />
+      <Copy size={18} className="text-indigo-700" />
     </button>
   );
 };

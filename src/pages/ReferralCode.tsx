@@ -1,9 +1,7 @@
-
 import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import Navbar from '../components/Navbar';
 import { Gift, Clock, AlertTriangle, CheckCircle } from 'lucide-react';
-import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import { useLocation } from 'react-router-dom';
 
@@ -142,8 +140,6 @@ const ReferralCode = () => {
               </div>
             </div>
           </section>
-
-          <Contact />
         </main>
         <Footer />
       </div>

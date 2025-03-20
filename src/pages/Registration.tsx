@@ -4,7 +4,6 @@ import { Helmet } from 'react-helmet';
 import { useLocation } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import RegistrationGuide from '../components/RegistrationGuide';
-import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 
 const Registration = () => {
@@ -50,7 +49,6 @@ const Registration = () => {
             </div>
           </div>
           <RegistrationGuide />
-          <Contact />
         </main>
         <Footer />
       </div>

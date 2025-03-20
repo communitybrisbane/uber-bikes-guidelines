@@ -4,7 +4,6 @@ import { Helmet } from 'react-helmet';
 import Navbar from '../components/Navbar';
 import EarningsTips from '../components/EarningsTips';
 import IncomeBreakdown from '../components/IncomeBreakdown';
-import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import { useLocation } from 'react-router-dom';
 
@@ -53,7 +52,6 @@ const EarningTips = () => {
           
           <EarningsTips />
           <IncomeBreakdown />
-          <Contact />
         </main>
         <Footer />
       </div>

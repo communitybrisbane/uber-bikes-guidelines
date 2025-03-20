@@ -1,10 +1,8 @@
-
 import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import Navbar from '../components/Navbar';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { UserCircle, MessageSquare, TrendingUp } from 'lucide-react';
-import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import { useLocation } from 'react-router-dom';
 
@@ -182,7 +180,7 @@ const SuccessStories = () => {
                           体験談
                         </h4>
                         <p className="mb-4">
-                          「平日はカフェでバリスタとして働き、週末はUber Eatsで稼いでいます。週末は特に注文が多く、時給換算すると平日よりもかなり良い収入になります。」
+                          「平日はカフェでバリスタとして働き、週末はUber Eatsで稼いでいます。週末は特に注文が多く、時給換算��ると平日よりもかなり良い収入になります。」
                         </p>
                         <p>
                           「Fortitude Valleyは夜になると若者向けのレストランやバーからの注文が増えるので、効率よく稼げます。最初は登録手続きに少し時間がかかりましたが、community_brisbaneのアドバイスでスムーズに進められました。ワーホリでの滞在費を稼ぐのに最適な仕事だと思います。」
@@ -194,8 +192,6 @@ const SuccessStories = () => {
               </Tabs>
             </div>
           </section>
-
-          <Contact />
         </main>
         <Footer />
       </div>

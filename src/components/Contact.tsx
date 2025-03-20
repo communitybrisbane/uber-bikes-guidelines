@@ -1,12 +1,13 @@
 
 import { Instagram, Users, Globe, MessageSquare, Calendar } from 'lucide-react';
+import { Button } from './ui/button';
 
 const Contact = () => {
   return (
-    <section className="section-container bg-white" id="contact">
+    <section className="section-container bg-gradient-to-b from-white to-uber-lightGray" id="contact">
       <div className="text-center max-w-3xl mx-auto mb-12">
-        <h2 className="section-title mx-auto w-fit after:mx-auto">
-          お問い合わせ
+        <h2 className="text-3xl md:text-4xl font-bold mb-6 text-uber-black">
+          <span className="text-gradient bg-gradient-to-r from-uber-green to-uber-blue">お問い合わせ</span>
         </h2>
         <p className="text-lg text-gray-700 mt-4">
           お気軽にご連絡ください
@@ -16,8 +17,8 @@ const Contact = () => {
       <div className="max-w-4xl mx-auto">
         <div className="flex flex-col md:flex-row gap-8">
           <div className="flex-1">
-            <div className="glass-panel rounded-xl p-8 h-full">
-              <h3 className="text-2xl font-bold mb-6">お問い合わせ方法</h3>
+            <div className="glass-panel rounded-xl p-8 h-full shadow-lg transition-all duration-300 hover:shadow-xl">
+              <h3 className="text-2xl font-bold mb-6 text-uber-black">お問い合わせ方法</h3>
               
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
@@ -42,7 +43,7 @@ const Contact = () => {
           </div>
           
           <div className="flex-1">
-            <div className="bg-uber-black text-white rounded-xl p-8 h-full">
+            <div className="bg-uber-black text-white rounded-xl p-8 h-full shadow-lg transition-all duration-300 hover:shadow-xl">
               <h3 className="text-2xl font-bold mb-6">community_brisbane について</h3>
               
               <div className="space-y-5">

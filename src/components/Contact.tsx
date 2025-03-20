@@ -9,7 +9,7 @@ const Contact = () => {
           お問い合わせ
         </h2>
         <p className="text-lg text-gray-700 mt-4">
-          間違いや不明点がる際はお気軽にご連絡ください
+          お気軽にご連絡ください
         </p>
       </div>
 
@@ -37,30 +37,6 @@ const Contact = () => {
                     </a>
                   </div>
                 </div>
-              </div>
-              
-              <div className="mt-8 pt-6 border-t border-gray-200">
-                <h4 className="font-bold text-lg mb-4">オンライン講習のご案内</h4>
-                <p className="text-gray-600 mb-4">
-                  Instagramにてuberの稼ぎ方についてオンライン講習予約を実施中。
-                </p>
-                <p className="text-gray-600 mb-4">
-                  多数のuber driverの知識と知恵をまとめた1 on 1によるuber徹底質問講習です。
-                </p>
-                <p className="text-gray-600 mb-4">
-                  Instagramにはデータ公開していないです。DMのみの限定な情報です。
-                </p>
-                <p className="text-gray-600 mb-4">
-                  講習ではその地域に合わせた稼げる場所や時間帯や独自に集めたデータから効率よく稼ぐ方法を教えます。
-                </p>
-                <a 
-                  href="https://instagram.com/community_brisbane" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="uber-outline-button inline-block"
-                >
-                  Instagram で詳細を見る
-                </a>
               </div>
             </div>
           </div>

@@ -1,5 +1,5 @@
 
-import { Instagram } from 'lucide-react';
+import { Instagram, Users, Globe, MessageSquare, Calendar } from 'lucide-react';
 
 const Contact = () => {
   return (
@@ -26,7 +26,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-bold text-lg mb-1">Instagram</h4>
-                    <p className="text-gray-600 mb-2">間違いやご不明点がある場合のみ</p>
+                    <p className="text-gray-600 mb-2">お気軽にご連絡ください</p>
                     <a 
                       href="https://instagram.com/community_brisbane" 
                       target="_blank" 
@@ -43,42 +43,49 @@ const Contact = () => {
           
           <div className="flex-1">
             <div className="bg-uber-black text-white rounded-xl p-8 h-full">
-              <h3 className="text-2xl font-bold mb-6">講習で分かること</h3>
+              <h3 className="text-2xl font-bold mb-6">community_brisbane について</h3>
               
-              <div className="bg-white/10 p-6 rounded-lg mb-6 border border-white/20">
-                <h4 className="font-bold text-xl mb-4">あなたに最適な稼ぎ方</h4>
-                <ul className="space-y-3">
-                  <li className="flex items-start">
-                    <span className="bg-uber-green text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">1</span>
-                    <p>効率よく稼げる時間帯とエリア</p>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="bg-uber-green text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">2</span>
-                    <p>収入を最大化するためのコツと戦略</p>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="bg-uber-green text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">3</span>
-                    <p>あなたの地域に特化した配達情報</p>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="bg-uber-green text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">4</span>
-                    <p>実績データに基づくアドバイス</p>
-                  </li>
-                </ul>
-              </div>
-              
-              <div className="space-y-4">
-                <p className="text-white/90">
-                  1対1の個別講習で、あなたの状況に合わせたアドバイスが受けられます。
-                </p>
-                <a 
-                  href="https://instagram.com/community_brisbane" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="w-full bg-uber-green text-white font-bold py-3 px-6 rounded-md hover:bg-opacity-90 transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-uber-black inline-block text-center"
-                >
-                  講習の詳細を見る
-                </a>
+              <div className="space-y-5">
+                <div className="flex items-start gap-4">
+                  <div className="bg-white/10 p-3 rounded-full flex-shrink-0">
+                    <Users size={22} className="text-uber-green" />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-lg mb-1">国際交流イベント</h4>
+                    <p className="text-white/80">様々な国の人と交流できるイベントを定期的に開催しています</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start gap-4">
+                  <div className="bg-white/10 p-3 rounded-full flex-shrink-0">
+                    <Calendar size={22} className="text-uber-green" />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-lg mb-1">BBQや日本文化イベント</h4>
+                    <p className="text-white/80">オーストラリアでの日本文化紹介や現地の文化を楽しむイベントを開催</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start gap-4">
+                  <div className="bg-white/10 p-3 rounded-full flex-shrink-0">
+                    <MessageSquare size={22} className="text-uber-green" />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-lg mb-1">言語交換</h4>
+                    <p className="text-white/80">英語や日本語を学びたい人向けの言語交換の機会を提供しています</p>
+                  </div>
+                </div>
+                
+                <div className="mt-4">
+                  <a 
+                    href="https://instagram.com/community_brisbane" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="w-full bg-uber-green text-white font-bold py-3 px-6 rounded-md hover:bg-opacity-90 transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-uber-black inline-block text-center"
+                  >
+                    Instagramで詳細を見る
+                  </a>
+                </div>
               </div>
             </div>
           </div>

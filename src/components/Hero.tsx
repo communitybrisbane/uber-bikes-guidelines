@@ -1,6 +1,6 @@
-
-import { ChevronDown, Copy } from 'lucide-react';
+import { ChevronDown } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
+import CopyButton from './CopyButton';
 
 const Hero = () => {
   const { toast } = useToast();
@@ -10,7 +10,6 @@ const Hero = () => {
     if (guideElement) {
       guideElement.scrollIntoView({ behavior: 'smooth' });
     } else {
-      // If we're not on the registration page with the guide
       window.scrollTo({
         top: window.innerHeight,
         behavior: 'smooth'
@@ -37,7 +36,6 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image with Overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat" 
         style={{ 
@@ -46,10 +44,8 @@ const Hero = () => {
         }}
       />
       
-      {/* Gradient Overlay */}
       <div className="absolute inset-0 bg-gradient-to-t from-uber-black/80 to-transparent" />
       
-      {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="animate-fade-up">
           <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
@@ -67,13 +63,7 @@ const Hero = () => {
           <div className="glass-panel-dark p-4 rounded-lg inline-block mb-8">
             <div className="flex items-center justify-center">
               <p className="text-white text-lg font-mono tracking-wider mr-2">紹介コード: <span className="text-uber-green font-bold">353ebz8exhf7</span></p>
-              <button 
-                onClick={copyReferralCode}
-                className="bg-uber-green/20 hover:bg-uber-green/30 p-2 rounded-md transition-colors"
-                aria-label="紹介コードをコピー"
-              >
-                <Copy size={18} className="text-uber-green" />
-              </button>
+              <CopyButton code="353ebz8exhf7" />
             </div>
           </div>
           
@@ -82,14 +72,13 @@ const Hero = () => {
               href="https://www.uber.com/signup/drive/deliver/?invite_code=1248nns95uhm"
               target="_blank"
               rel="noopener noreferrer" 
-              className="uber-button text-lg px-8 py-4 shadow-lg"
+              className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-lg px-10 py-4 rounded-md shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl border-2 border-indigo-400 flex items-center justify-center"
             >
               今すぐ登録する
             </a>
           </div>
         </div>
         
-        {/* Scroll Down Indicator */}
         <div 
           className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce cursor-pointer"
           onClick={scrollToGuide}

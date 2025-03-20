@@ -53,7 +53,7 @@ const Hero = () => {
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="animate-fade-up">
           <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-            スキマ時間で簡単に収入UP！<br className="hidden sm:inline" />
+            スキマ時間で収入UP！<br className="hidden sm:inline" />
             <span className="text-uber-green">＄50で始める副業uber</span>
           </h1>
           

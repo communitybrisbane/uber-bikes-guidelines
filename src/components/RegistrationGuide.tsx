@@ -11,8 +11,10 @@ import {
   Check, 
   ArrowRight, 
   ChevronDown,
-  ChevronUp 
+  ChevronUp,
+  Copy 
 } from 'lucide-react';
+import { useToast } from '@/hooks/use-toast';
 
 const steps = [
   {
@@ -38,7 +40,16 @@ const steps = [
     id: 3,
     title: "招待コードの入力",
     icon: <DollarSign className="text-uber-green" size={28} />,
-    content: "招待コードを入力しないと$500の特典が受け取れません！"
+    content: (
+      <div>
+        <p className="mb-3">招待コードを入力しないと$500の特典が受け取れません！</p>
+        <div className="flex items-center justify-center bg-uber-green/10 p-3 rounded-lg mb-2">
+          <p className="text-uber-green font-mono font-bold tracking-wider mr-2">353ebz8exhf7</p>
+          <CopyButton code="353ebz8exhf7" />
+        </div>
+        <p className="text-sm text-gray-600">※ 登録時にのみ入力可能。後から追加することはできません。</p>
+      </div>
+    )
   },
   {
     id: 4,
@@ -98,6 +109,38 @@ const steps = [
     content: "すべての手続きが完了すると、Uber Driverアプリから稼働開始できます。"
   },
 ];
+
+// Copy button component for referral code
+const CopyButton = ({ code }: { code: string }) => {
+  const { toast } = useToast();
+  
+  const handleCopy = () => {
+    navigator.clipboard.writeText(code)
+      .then(() => {
+        toast({
+          title: "紹介コードをコピーしました",
+          description: "登録フォームに貼り付けてください",
+        });
+      })
+      .catch(() => {
+        toast({
+          title: "コピーに失敗しました",
+          description: "手動でコピーしてください",
+          variant: "destructive",
+        });
+      });
+  };
+  
+  return (
+    <button 
+      onClick={handleCopy}
+      className="bg-uber-green/20 hover:bg-uber-green/30 p-2 rounded-md transition-colors"
+      aria-label="紹介コードをコピー"
+    >
+      <Copy size={18} className="text-uber-green" />
+    </button>
+  );
+};
 
 const RegistrationGuide = () => {
   const [activeStep, setActiveStep] = useState<number | null>(null);
@@ -161,7 +204,7 @@ const RegistrationGuide = () => {
                   {step.icon}
                   <h3 className="text-lg font-semibold">{step.title}</h3>
                 </div>
-                {Array.isArray(step.content) && (
+                {(Array.isArray(step.content) || typeof step.content === 'object') && (
                   <button className="text-uber-green">
                     {activeStep === step.id ? (
                       <ChevronUp size={20} />
@@ -195,7 +238,7 @@ const RegistrationGuide = () => {
                     ))}
                   </ul>
                 ) : (
-                  <p className="text-gray-700">{step.content}</p>
+                  <div>{step.content}</div>
                 )}
               </div>
             </div>

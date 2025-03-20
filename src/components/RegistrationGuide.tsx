@@ -16,6 +16,38 @@ import {
 } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 
+// Copy button component for referral code
+const CopyButton = ({ code }: { code: string }) => {
+  const { toast } = useToast();
+  
+  const handleCopy = () => {
+    navigator.clipboard.writeText(code)
+      .then(() => {
+        toast({
+          title: "紹介コードをコピーしました",
+          description: "登録フォームに貼り付けてください",
+        });
+      })
+      .catch(() => {
+        toast({
+          title: "コピーに失敗しました",
+          description: "手動でコピーしてください",
+          variant: "destructive",
+        });
+      });
+  };
+  
+  return (
+    <button 
+      onClick={handleCopy}
+      className="bg-uber-green/20 hover:bg-uber-green/30 p-2 rounded-md transition-colors"
+      aria-label="紹介コードをコピー"
+    >
+      <Copy size={18} className="text-uber-green" />
+    </button>
+  );
+};
+
 const steps = [
   {
     id: 1,
@@ -109,38 +141,6 @@ const steps = [
     content: "すべての手続きが完了すると、Uber Driverアプリから稼働開始できます。"
   },
 ];
-
-// Copy button component for referral code
-const CopyButton = ({ code }: { code: string }) => {
-  const { toast } = useToast();
-  
-  const handleCopy = () => {
-    navigator.clipboard.writeText(code)
-      .then(() => {
-        toast({
-          title: "紹介コードをコピーしました",
-          description: "登録フォームに貼り付けてください",
-        });
-      })
-      .catch(() => {
-        toast({
-          title: "コピーに失敗しました",
-          description: "手動でコピーしてください",
-          variant: "destructive",
-        });
-      });
-  };
-  
-  return (
-    <button 
-      onClick={handleCopy}
-      className="bg-uber-green/20 hover:bg-uber-green/30 p-2 rounded-md transition-colors"
-      aria-label="紹介コードをコピー"
-    >
-      <Copy size={18} className="text-uber-green" />
-    </button>
-  );
-};
 
 const RegistrationGuide = () => {
   const [activeStep, setActiveStep] = useState<number | null>(null);
